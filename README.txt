@@ -1,16 +1,9 @@
-TEX PUB — SITE DARK PREMIUM | VERSÃO 1
+TEX PUB — SITE DARK PREMIUM | VERSÃO 2
 
-COMO VER:
-Abra index.html no navegador. Não precisa instalar nada.
+Abra index.html no navegador.
 
-COMO PUBLICAR:
-Envie esta pasta a um repositório GitHub e importe no Vercel como projeto estático, ou faça upload do conteúdo em um host estático. Depois, configure o domínio texpub.com.br no painel do provedor e atualize os registros DNS no Cloudflare conforme instruções do provedor. Não altere os registros do domínio antes de confirmar a nova implantação.
+Atualizações: Instagram oficial, WhatsApp oficial, seção Faça sua reserva.
+O formulário abre uma conversa no WhatsApp (11) 91700-1748 com nome, data, horário e quantidade de pessoas preenchidos. O cliente precisa enviar a mensagem no WhatsApp. NÃO há registro de reservas no servidor nem confirmação automática; a equipe responde e confirma manualmente.
 
-ANTES DE PUBLICAR:
-1. Confirmar horário de funcionamento e endereço completo.
-2. Em script.js, preencher INSTAGRAM_URL com o Instagram oficial.
-3. Adicionar o WhatsApp oficial e link para cardápio completo, quando informados.
-4. Validar a programação semanal atual.
-5. Adicionar as novas fotos em assets e na galeria de index.html.
-
-O site usa apenas fotos reais enviadas e a logo oficial fornecida.
+Para publicar: hospede como site estático (ex.: Vercel ou Cloudflare Pages) e só depois aponte texpub.com.br no Cloudflare.
+Antes de publicar: confirmar endereço completo, horários e programação. Novas fotos podem ser adicionadas em assets e na galeria.
