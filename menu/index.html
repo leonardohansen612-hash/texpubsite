@@ -1,8 +1,151 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#110c19"><meta name="description" content="Cardápio TEX PUB: chopes, gastronomia, pizzas, drinks e bebidas em Jundiaí."><title>Cardápio | TEX PUB Jundiaí</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
 :root{color-scheme:dark;--purple:#7543a9;--bg:#110c19;--cream:#f3e9d7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:Outfit,Arial,sans-serif}a{color:inherit;text-decoration:none}.top{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px clamp(14px,4vw,55px);background:#170f22ee;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18}.top img{width:110px;max-height:60px;object-fit:contain}.top .actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.top a:not(.logo){font-size:13px;font-weight:700;letter-spacing:.05em}.reserve{background:var(--purple);border-radius:40px;padding:12px 18px}.back{opacity:.85}.hero{text-align:center;padding:44px 16px 24px}.eyebrow{color:#b99ad7;font-size:12px;font-weight:700;letter-spacing:.2em}.hero h1{font-size:clamp(38px,7vw,75px);margin:8px 0;letter-spacing:-.055em}.hero p{color:#c4b9d0;max-width:540px;margin:0 auto;line-height:1.6}.tabs{position:sticky;top:85px;z-index:9;display:flex;gap:9px;overflow-x:auto;max-width:1050px;margin:22px auto 24px;padding:5px 16px 14px;scrollbar-width:thin}.tabs a{white-space:nowrap;padding:11px 16px;background:#291b39;border:1px solid #ffffff25;border-radius:30px;font-size:13px;font-weight:600}.tabs a:hover,.tabs a:focus-visible{background:var(--purple)}main{max-width:1000px;margin:auto;padding:0 14px 70px}.page{scroll-margin-top:170px;margin:0 auto 28px;max-width:850px}.page h2{font-size:22px;letter-spacing:.04em;margin:0 0 12px;color:var(--cream)}.page img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 20px 55px #0008;cursor:zoom-in}.tip{color:#a99ab7;text-align:center;font-size:12px;margin:20px}.foot{text-align:center;padding:30px 12px 45px;border-top:1px solid #ffffff20;color:#b9aec7}.foot a{text-decoration:underline;text-underline-offset:4px}dialog{border:0;padding:0;background:transparent;max-width:98vw;max-height:96vh;overflow:auto}dialog::backdrop{background:#000e}dialog img{display:block;width:min(1300px,95vw);height:auto}dialog button{position:fixed;right:18px;top:18px;background:#fff;color:#111;border:0;border-radius:30px;padding:12px 16px;font-weight:700;cursor:pointer}@media(max-width:600px){.top img{width:82px}.top .actions{gap:8px}.top a:not(.logo){font-size:11px}.reserve{padding:10px 12px}.tabs{top:69px}.hero{padding-top:28px}.page{scroll-margin-top:140px}.page img{border-radius:7px}}
-</style><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"></head><body><header class="top"><a class="logo" href="/" aria-label="Voltar ao site TEX PUB"><img src="../assets/logo-tex-pub.png" alt="TEX PUB"></a><div class="actions"><a class="back" href="/">← VOLTAR AO SITE</a><a class="reserve" href="/#reserva">FAÇA SUA RESERVA ↗</a></div></header><div class="hero"><span class="eyebrow">TEX PUB · JUNDIAÍ</span><h1>NOSSO CARDÁPIO<span style="color:#a76fdb">.</span></h1><p>Explore os sabores do TEX. Escolha uma categoria abaixo e aproveite!</p></div><nav class="tabs" aria-label="Categorias do cardápio"><a href="#chopes">🍺 Chopes</a><a href="#petiscos">🍟 Petiscos & porções</a><a href="#pizzas">🍕 Pizzas & lanches</a><a href="#drinks">🍸 Drinks</a><a href="#bebidas">🥤 Sem álcool & bebidas</a></nav><main>
-<section class="page" id="chopes"><h2>01 / CHOPES & DEGUSTAÇÃO</h2><img src="1.png" alt="Cardápio original de chopes, preços e régua de degustação" loading="eager"></section>
-<section class="page" id="petiscos"><h2>02 / PETISCOS, ENTRADAS & PORÇÕES</h2><img src="3.png" alt="Cardápio original de petiscos, entradas e porções" loading="lazy"></section>
-<section class="page" id="pizzas"><h2>03 / PIZZAS, LANCHES & SOBREMESAS</h2><img src="4.png" alt="Cardápio original de pizzas, lanches e sobremesas" loading="lazy"></section>
-<section class="page" id="drinks"><h2>04 / DRINKS & DOSES</h2><img src="6.png" alt="Cardápio original de drinks clássicos, autorais, caipirinhas e doses" loading="lazy"></section>
-<section class="page" id="bebidas"><h2>05 / SEM ÁLCOOL, BEBIDAS & VINHOS</h2><img src="7.png" alt="Cardápio original de bebidas sem álcool, refrigerantes, sucos e vinhos" loading="lazy"></section><p class="tip">Toque em qualquer página para ampliar.</p></main><footer class="foot">TEX PUB · JUNDIAÍ · <a href="https://www.instagram.com/texpub.jundiai/" target="_blank" rel="noopener">@texpub.jundiai</a></footer><dialog id="zoom" aria-label="Visualizar página ampliada"><button type="button" id="close">✕ FECHAR</button><img alt="Página ampliada do cardápio"></dialog><script>const d=document.getElementById('zoom');document.querySelectorAll('.page img').forEach(img=>img.addEventListener('click',()=>{d.querySelector('img').src=img.src;d.querySelector('img').alt=img.alt;d.showModal()}));document.getElementById('close').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d)d.close()});</script></body></html>
+
+[hidden]{display:none!important}.top{position:relative;gap:9px}.reserve{border-radius:6px;background:#6833c5}.icon{width:1em;height:1em;vertical-align:-.12em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.hero h1{color:#ede1cc}.hero{padding-bottom:18px}.menu-tools{max-width:850px;margin:0 auto 21px;padding:0 14px}.tabs{position:static;flex-wrap:wrap;overflow:visible;padding:0;margin:0 0 16px}.tabs a{border-radius:6px;padding:9px 12px;background:#241936}.tabs a[aria-current=true]{border-color:#bc9bff;background:#533182}.menu-tools label{max-width:440px;display:block;color:#ede1cc;font-size:14px;font-weight:600}.menu-tools input{display:block;width:100%;margin-top:6px;padding:11px 12px;font:inherit;font-size:16px;color:#fff;background:#21182b;border:1px solid #755c8c;border-radius:6px}#menu-status{color:#d6c7eb;font-size:.9rem;margin:5px 0}#menu-status:empty{display:none}
+.page{scroll-margin-top:16px;margin-bottom:32px}.page h2{font-size:clamp(24px,4vw,36px);letter-spacing:-.01em;border-bottom:1px solid #775b8d;padding-bottom:8px}.menu-group{padding:10px 0}.menu-group h3{margin:0 0 7px;font-size:1rem;color:#ddc4ff}.menu-group ul{margin:0;padding:0;list-style:none;background:#1d1528;border:1px solid #4c395d;border-radius:10px}.menu-item{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:14px;padding:12px 14px;border-bottom:1px solid #45364f}.menu-item:last-child{border-bottom:0}.item-main strong{color:#ede1cc;font-size:1rem}.item-main p{margin:4px 0 0;font-size:.91rem;line-height:1.4;color:#d7cbdf}.price{font-weight:600;font-size:.9rem;text-align:right;max-width:150px;color:#edddff}.original{margin:9px 0 0;color:#d7c3f1}.original summary{padding:8px 0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}.original img{cursor:zoom-in;max-width:800px}.original a{display:block}.tabs a,.top a,.original summary{min-height:36px}a:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid #dfc7ff;outline-offset:4px}
+@media(max-width:600px){.top{padding:10px 14px}.top img{width:74px}.top .actions{justify-content:flex-end;gap:7px 10px}.calendar-link{font-size:10px!important}.tabs{gap:6px}.tabs a{padding:8px 9px;font-size:12px}.menu-item{gap:8px;padding:10px}.price{max-width:90px}.page{scroll-margin-top:12px}.hero{padding-top:20px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.size-prices,.price.size-prices{max-width:none}.size-prices span{display:block;white-space:nowrap}
+</style><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"></head><body><header class="top"><a class="logo" href="/" aria-label="Voltar ao site TEX PUB"><img src="../assets/logo-tex-pub.png" alt="TEX PUB"></a><div class="actions"><a class="back" href="/">INÍCIO</a><a class="calendar-link" href="/calendario/">PROGRAMAÇÃO</a><a class="reserve" href="/#reserva">RESERVAR <svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M5 4h7v7"/></svg></a></div></header><div class="hero"><span class="eyebrow">TEX PUB · JUNDIAÍ</span><h1>NOSSO CARDÁPIO<span style="color:#a76fdb">.</span></h1><p>Escolha uma categoria ou busque pelo seu favorito.</p></div><div class="menu-tools"><nav class="tabs" aria-label="Categorias do cardápio"><a href="#chopes">Chopes</a><a href="#petiscos">Petiscos e porções</a><a href="#pizzas">Pizzas e lanches</a><a href="#drinks">Drinks</a><a href="#bebidas">Bebidas e vinhos</a></nav><label for="menu-search">Buscar no cardápio <input type="search" id="menu-search" placeholder="Ex.: pizza, IPA ou lichia" autocomplete="off"></label><p id="menu-status" role="status"></p></div><main>
+<section class="page" id="chopes"><h2>Chopes &amp; degustação</h2>
+<section class="menu-group"><h3>Direto da torneira</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Bitterzinha</strong><p>Extra special bitter, a breja oficial do pub. IBU 37 · 4,8%.</p></div><span class="price size-prices"><span>300 ml · R$ 16</span><span>500 ml · R$ 25</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Pilsen</strong><p>IBU 14 · 5,3%.</p></div><span class="price size-prices"><span>300 ml · R$ 13</span><span>500 ml · R$ 22</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Hoplager</strong><p>IBU 14 · 5,3%.</p></div><span class="price size-prices"><span>300 ml · R$ 15</span><span>500 ml · R$ 24</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Witbier</strong><p>IBU 12 · 4,3%.</p></div><span class="price size-prices"><span>300 ml · R$ 14</span><span>500 ml · R$ 22</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Ybá</strong><p>IBU 5 · 4,9%.</p></div><span class="price size-prices"><span>300 ml · R$ 17</span><span>500 ml · R$ 25</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>American IPA</strong><p>IBU 54 · 6,5%.</p></div><span class="price size-prices"><span>300 ml · R$ 18</span><span>500 ml · R$ 27</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Textreme</strong><p>Double IPA limitada. IBU 72 · 8%.</p></div><span class="price size-prices"><span>300 ml · R$ 19</span><span>500 ml · R$ 29</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>English Porter</strong><p>IBU 16 · 5,1%.</p></div><span class="price size-prices"><span>300 ml · R$ 15</span><span>500 ml · R$ 24</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Maria Manuela</strong><p>Imperial stout “The Long Way”. IBU 67 · 11%.</p></div><span class="price size-prices"><span>300 ml · R$ 36</span><span>500 ml · R$ 54</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Weiss</strong><p>IBU 12 · 4,9%.</p></div><span class="price size-prices"><span>300 ml · R$ 17</span><span>500 ml · R$ 27</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Oktobertex</strong><p>IBU 14 · 8%.</p></div><span class="price size-prices"><span>300 ml · R$ 17</span><span>500 ml · R$ 25</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Hop’n Roll Session IPA Zero</strong><p>IBU 29 · 0,4%.</p></div><span class="price size-prices"><span>300 ml · R$ 19</span><span>500 ml · R$ 30</span></span></li>
+<li class="menu-item"><div class="item-main"><strong>Pumpkin Ale</strong><p>IBU 28 · 5,4%.</p></div><span class="price size-prices"><span>300 ml · R$ 17</span><span>500 ml · R$ 25</span></span></li>
+</ul></section>
+<section class="menu-group"><h3>Réguas de degustação</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Fresh</strong><p>Leve e refrescante. Pilsen, Hoplager, Witbier, Ybá Sour e Bitterzinha. 180 ml cada.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Texperience</strong><p>Sugestão do pub. Pilsen, Bitterzinha, IPA, Ybá Sour e Porter. 180 ml cada.</p></div><span class="price">R$ 49</span></li>
+<li class="menu-item"><div class="item-main"><strong>Xtreme</strong><p>Potente e intenso. IPA, Textreme Double IPA, Bitterzinha, Porter e Maria Manuela Imperial Stout. 180 ml cada.</p></div><span class="price">R$ 59</span></li>
+</ul></section>
+<details class="original"><summary>Ver arte original desta categoria</summary><a href="1.png" target="_blank" rel="noopener"><img src="1.png" alt="Cardápio original de chopes e régua de degustação" loading="lazy" width="1447" height="2048"></a></details></section>
+<section class="page" id="petiscos"><h2>Petiscos, entradas &amp; porções</h2>
+<section class="menu-group"><h3>Petiscos</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Azeitona preta</strong><p>Porção de 150 g.</p></div><span class="price">R$ 14</span></li>
+<li class="menu-item"><div class="item-main"><strong>Batatinhas</strong><p>Porção de 150 g.</p></div><span class="price">R$ 15</span></li>
+<li class="menu-item"><div class="item-main"><strong>Pizza mussarela aperitivo</strong><p>Fatiada. Massa de longa fermentação, molho de tomate italiano e mussarela.</p></div><span class="price">R$ 49</span></li>
+<li class="menu-item"><div class="item-main"><strong>Tábua do Texugo</strong><p>Azeitonas pretas, parmesão, salame hamburguês, presunto cru italiano, muçarela e pepperoni.</p></div><span class="price">R$ 99</span></li>
+<li class="menu-item"><div class="item-main"><strong>Pururuca</strong><p>Porção de 250 g. Torresmo crocante.</p></div><span class="price">R$ 29</span></li>
+<li class="menu-item"><div class="item-main"><strong>O Croc</strong><p>Queijo coalho com bacon e molho sweet chilli thai.</p></div><span class="price">R$ 59</span></li>
+</ul></section>
+<section class="menu-group"><h3>Entradas</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Brusquetta Caprese</strong><p>Quatro fatias de pão artesanal com mussarela, cereja de búfala, tomate confit e pesto de manjericão da casa.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Brusquetta Pullo di Porko</strong><p>Quatro fatias de pão artesanal com pulled pork, american cheese e picles de cebola roxa e pepino da casa.</p></div><span class="price">R$ 54</span></li>
+<li class="menu-item"><div class="item-main"><strong>Burrata</strong><p>Pesto de manjericão, tomate da casa e torradas.</p></div><span class="price">R$ 79</span></li>
+<li class="menu-item"><div class="item-main"><strong>Mac &amp; Cheese</strong><p>Macarrão caracolino com muito molho american cheese.</p></div><span class="price">R$ 49</span></li>
+</ul></section>
+<section class="menu-group"><h3>Porções</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Isca de frango</strong><p>Iscas de frango empanadas, 150 g de batatas e molho chipotle.</p></div><span class="price">R$ 69</span></li>
+<li class="menu-item"><div class="item-main"><strong>Fish’n Chips</strong><p>Iscas de tilápia empanadas, 150 g de batatas e molho tártaro.</p></div><span class="price">R$ 69</span></li>
+<li class="menu-item"><div class="item-main"><strong>Ribs’n Chips</strong><p>Costelinha barbecue e 150 g de batatas.</p></div><span class="price">porção R$ 129 · meia R$ 69</span></li>
+<li class="menu-item"><div class="item-main"><strong>Fritex</strong><p>400 g de batatas com maionese e ketchup artesanal.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Fraldinha</strong><p>Acompanha chimichurri e pão artesanal.</p></div><span class="price">R$ 79</span></li>
+<li class="menu-item"><div class="item-main"><strong>Fritex Pork</strong><p>400 g de batatas, pulled pork e american cheese.</p></div><span class="price">R$ 69</span></li>
+<li class="menu-item"><div class="item-main"><strong>Brisket</strong><p>Porção com 400 g de peito bovino defumado. Acompanha american cheese.</p></div><span class="price">porção R$ 99 · meia R$ 49</span></li>
+<li class="menu-item"><div class="item-main"><strong>Linguiça defumada</strong><p>Linguiça toscana artesanal defumada com molho sweet chilli thai.</p></div><span class="price">R$ 49</span></li>
+<li class="menu-item"><div class="item-main"><strong>Menu Texano</strong><p>Costelinha suína defumada ao barbecue, linguiça defumada, sobrecoxa de frango, brisket, pulled pork, Mac &amp; Cheese e salada.</p></div><span class="price">R$ 179</span></li>
+</ul></section>
+<details class="original"><summary>Ver arte original desta categoria</summary><a href="3.png" target="_blank" rel="noopener"><img src="3.png" alt="Cardápio original de petiscos, entradas e porções" loading="lazy" width="1447" height="2048"></a></details></section>
+<section class="page" id="pizzas"><h2>Pizzas, lanches &amp; sobremesas</h2>
+<section class="menu-group"><h3>Pizza napolitana</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Margherita</strong><p>Massa de longa fermentação, molho de tomate italiano, mussarela, tomate seco, parmesão, manjericão e orégano.</p></div><span class="price">R$ 59</span></li>
+<li class="menu-item"><div class="item-main"><strong>Corn Bacon</strong><p>Massa de longa fermentação, molho de tomate italiano, mussarela, bacon e milho.</p></div><span class="price">R$ 56</span></li>
+<li class="menu-item"><div class="item-main"><strong>Caprese</strong><p>Massa romana de longa fermentação, molho de tomate italiano, mussarela, cereja de búfala e pesto de manjericão da casa.</p></div><span class="price">R$ 59</span></li>
+<li class="menu-item"><div class="item-main"><strong>Pepperoni</strong><p>Massa de longa fermentação, molho de tomate italiano, mussarela, pepperoni e parmesão.</p></div><span class="price">R$ 57</span></li>
+<li class="menu-item"><div class="item-main"><strong>Presuntex</strong><p>Massa de longa fermentação, molho de tomate italiano, mussarela, cereja de búfala, presunto cru italiano, rúcula, pesto de manjericão e parmesão.</p></div><span class="price">R$ 79</span></li>
+<li class="menu-item"><div class="item-main"><strong>Caipira</strong><p>Massa de longa fermentação, molho de tomate italiano, milho, mussarela, frango desfiado e catupiry.</p></div><span class="price">R$ 54</span></li>
+<li class="menu-item"><div class="item-main"><strong>Calabresa</strong><p>Massa de longa fermentação, molho de tomate italiano, mussarela e calabresa.</p></div><span class="price">R$ 54</span></li>
+</ul></section>
+<section class="menu-group"><h3>Lanches</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Tex Dog</strong><p>Pão de leite, american cheese, salsicha all beef defumada, ketchup, mostarda, milho verde, parmesão e picles de pepino e cebola da casa.</p></div><span class="price">R$ 34</span></li>
+<li class="menu-item"><div class="item-main"><strong>Burger</strong><p>Pão de brioche, blend de carne de 180 g e american cheese.</p></div><span class="price">R$ 34</span></li>
+<li class="menu-item"><div class="item-main"><strong>Burger de Salmão</strong><p>Hambúrguer de salmão defumado, alface, rúcula e molho tártaro.</p></div><span class="price">R$ 49</span></li>
+<li class="menu-item"><div class="item-main"><strong>American Burger</strong><p>Pão de brioche, blend de carne de 180 g, barbecue, farofa de bacon e american cheese. Acompanha batatas.</p></div><span class="price">R$ 59</span></li>
+<li class="menu-item"><div class="item-main"><strong>Tex Duplo Burger</strong><p>Pão de brioche, duplo blend de carne de 300 g, american cheese, farofa de bacon, mix de folhas, picles de pepino e cebola roxa.</p></div><span class="price">R$ 59</span></li>
+<li class="menu-item"><div class="item-main"><strong>Tex Pork</strong><p>Pão de brioche, american cheese, pulled pork, mix de folhas, picles de pepino e cebola roxa. Acompanha batatas.</p></div><span class="price">R$ 49</span></li>
+<li class="menu-item"><div class="item-main"><strong>Tex Chicken</strong><p>Pão de brioche, american cheese, frango empanado, mussarela gratinada e mix de folhas. Acompanha batatas.</p></div><span class="price">R$ 49</span></li>
+</ul></section>
+<section class="menu-group"><h3>Sobremesas</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Cocada cremosa</strong><p>Servida dentro do coco. Adicione gelato por R$ 10.</p></div><span class="price">R$ 29</span></li>
+<li class="menu-item"><div class="item-main"><strong>Pizza de Pasoka</strong><p>Massa de fermentação longa, creme de avelã e paçoca artesanal.</p></div><span class="price">R$ 44</span></li>
+<li class="menu-item"><div class="item-main"><strong>Fruit Titüs Frutitus</strong><p>Chocolate bean to bar da Dengo. Consulte os sabores.</p></div><span class="price">R$ 46</span></li>
+<li class="menu-item"><div class="item-main"><strong>Sorvete gelato</strong><p>Doce de leite com flor de sal ou Romeu e Julieta com flor de sal (goiabada com coalhada).</p></div><span class="price">R$ 22</span></li>
+</ul></section>
+<details class="original"><summary>Ver arte original desta categoria</summary><a href="4.png" target="_blank" rel="noopener"><img src="4.png" alt="Cardápio original de pizzas, lanches e sobremesas" loading="lazy" width="1447" height="2048"></a></details></section>
+<section class="page" id="drinks"><h2>Drinks &amp; doses</h2>
+<section class="menu-group"><h3>Clássicos</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Negroni</strong><p>Gin, vermute, Campari e rodela de laranja.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Aperol</strong><p>Espumante, Aperol e rodela de laranja.</p></div><span class="price">R$ 42</span></li>
+<li class="menu-item"><div class="item-main"><strong>Gin tônica</strong><p>Gin, tônica zero e especiarias.</p></div><span class="price">R$ 36</span></li>
+<li class="menu-item"><div class="item-main"><strong>Cosmopolitan</strong><p>Vodka, Cointreau, limão e cranberry.</p></div><span class="price">R$ 36</span></li>
+<li class="menu-item"><div class="item-main"><strong>Margarita</strong><p>Tequila, Cointreau e limão.</p></div><span class="price">R$ 36</span></li>
+<li class="menu-item"><div class="item-main"><strong>Moscow Mule</strong><p>Vodka, água com gás, limão e espuma de gengibre.</p></div><span class="price">R$ 42</span></li>
+<li class="menu-item"><div class="item-main"><strong>Pink Lemonade</strong><p>Cranberry, limão, hibisco e vodka.</p></div><span class="price">R$ 34</span></li>
+<li class="menu-item"><div class="item-main"><strong>Old Fashioned</strong><p>Whisky, bitter, cereja e casca de laranja.</p></div><span class="price">R$ 42</span></li>
+<li class="menu-item"><div class="item-main"><strong>Manhattan</strong><p>Whisky, vermute e Angostura.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Kir Royale</strong><p>Licor de cassis, espumante e frutas vermelhas.</p></div><span class="price">R$ 29</span></li>
+</ul></section>
+<section class="menu-group"><h3>Autorais</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Muchacha</strong><p>Tequila, Cointreau, Ybá, xarope de mel e suco de limão.</p></div><span class="price">R$ 41</span></li>
+<li class="menu-item"><div class="item-main"><strong>Sour Sweet</strong><p>Rum, Cointreau, Angostura, Ybá, espuma e canela.</p></div><span class="price">R$ 29</span></li>
+<li class="menu-item"><div class="item-main"><strong>Ragnar</strong><p>Hidromel, Pilsen e xarope de limão siciliano.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Velvet Red</strong><p>Licor de lichia, vodka, suco de limão e frutas vermelhas.</p></div><span class="price">R$ 29</span></li>
+<li class="menu-item"><div class="item-main"><strong>Tex Lover</strong><p>Vodka, morango e limão siciliano. Refrescante e frutado.</p></div><span class="price">R$ 42</span></li>
+<li class="menu-item"><div class="item-main"><strong>Salted Caramel</strong><p>Vodka, café, Baileys e caramelo.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Irish Car Bomb</strong><p>Vodka, café, Baileys e calda de chocolate.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Dona Onça</strong><p>Cachaça de pimenta, maracujá, xarope de canela, licor de jambu e suco de limão.</p></div><span class="price">R$ 42</span></li>
+<li class="menu-item"><div class="item-main"><strong>Afrodisíaco</strong><p>Cachaça, licor de jambu, espumante e xarope de pimenta.</p></div><span class="price">R$ 44</span></li>
+</ul></section>
+<section class="menu-group"><h3>Caipirinhas</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Caipiroska</strong><p>Vodka, limão ou maracujá.</p></div><span class="price">R$ 44</span></li>
+<li class="menu-item"><div class="item-main"><strong>Sakerinha</strong><p>Saquê, limão ou maracujá.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Caipirinha</strong><p>Cachaça premium, limão ou maracujá.</p></div><span class="price">R$ 39</span></li>
+<li class="menu-item"><div class="item-main"><strong>Caipivinho</strong><p>Vinho, limão e xarope de limão.</p></div><span class="price">R$ 39</span></li>
+</ul></section>
+<section class="menu-group"><h3>Doses</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Cachaça envelhecida</strong></div><span class="price">R$ 12</span></li>
+<li class="menu-item"><div class="item-main"><strong>Jameson</strong></div><span class="price">R$ 34</span></li>
+<li class="menu-item"><div class="item-main"><strong>Campari</strong></div><span class="price">R$ 29</span></li>
+<li class="menu-item"><div class="item-main"><strong>Jägermeister</strong></div><span class="price">R$ 34</span></li>
+<li class="menu-item"><div class="item-main"><strong>Jack Daniel’s</strong></div><span class="price">R$ 34</span></li>
+</ul></section>
+<details class="original"><summary>Ver arte original desta categoria</summary><a href="6.png" target="_blank" rel="noopener"><img src="6.png" alt="Cardápio original de drinks clássicos, autorais, caipirinhas e doses" loading="lazy" width="1447" height="2048"></a></details></section>
+<section class="page" id="bebidas"><h2>Sem álcool, bebidas &amp; vinhos</h2>
+<section class="menu-group"><h3>Drinks sem álcool</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Ginger Lemon Pie</strong><p>Suco de limão, baunilha e espuma de gengibre.</p></div><span class="price">R$ 20</span></li>
+<li class="menu-item"><div class="item-main"><strong>Joaninha</strong><p>Spritz de morango com toque cítrico.</p></div><span class="price">R$ 34</span></li>
+<li class="menu-item"><div class="item-main"><strong>Soda Italiana</strong><p>Até dois sabores: maçã verde, limão siciliano, cranberry e gengibre.</p></div><span class="price">R$ 15</span></li>
+<li class="menu-item"><div class="item-main"><strong>Pink Lemonade sem álcool</strong><p>Cranberry, limão, hibisco e Sprite.</p></div><span class="price">R$ 22</span></li>
+<li class="menu-item"><div class="item-main"><strong>Doce Pecado</strong><p>Xarope de lichia, xarope de pimenta, Sprite e suco de limão.</p></div><span class="price">R$ 29</span></li>
+</ul></section>
+<section class="menu-group"><h3>Bebidas</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Tônica</strong><p>Sem açúcar.</p></div><span class="price">R$ 10</span></li>
+<li class="menu-item"><div class="item-main"><strong>Sprite</strong><p>Tradicional ou sem açúcar.</p></div><span class="price">R$ 10</span></li>
+<li class="menu-item"><div class="item-main"><strong>Água</strong><p>Com ou sem gás.</p></div><span class="price">R$ 8</span></li>
+<li class="menu-item"><div class="item-main"><strong>Coca-Cola KS</strong><p>Tradicional ou sem açúcar.</p></div><span class="price">R$ 10</span></li>
+<li class="menu-item"><div class="item-main"><strong>Guaraná Antarctica</strong><p>Tradicional ou sem açúcar.</p></div><span class="price">R$ 10</span></li>
+<li class="menu-item"><div class="item-main"><strong>H2O Limoneto</strong></div><span class="price">R$ 10</span></li>
+</ul></section>
+<section class="menu-group"><h3>Sucos</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Suco de uva integral</strong><p>300 ml.</p></div><span class="price">R$ 19</span></li>
+<li class="menu-item"><div class="item-main"><strong>Suco de pêssego</strong><p>Del Valle.</p></div><span class="price">R$ 10</span></li>
+<li class="menu-item"><div class="item-main"><strong>Suco de laranja</strong><p>Prat’s.</p></div><span class="price">R$ 10</span></li>
+<li class="menu-item"><div class="item-main"><strong>Suco de limão</strong><p>Natural.</p></div><span class="price">R$ 10</span></li>
+</ul></section>
+<section class="menu-group"><h3>Vinhos</h3><ul>
+<li class="menu-item"><div class="item-main"><strong>Garrafas</strong><p>Vinhos selecionados, nacionais e importados. Consulte a carta.</p></div><span class="price">a partir de R$ 79</span></li>
+<li class="menu-item"><div class="item-main"><strong>Taça</strong><p>Tinto seco chileno.</p></div><span class="price">R$ 19</span></li>
+<li class="menu-item"><div class="item-main"><strong>Taxa de rolha</strong></div><span class="price">R$ 60</span></li>
+</ul></section>
+<details class="original"><summary>Ver arte original desta categoria</summary><a href="7.png" target="_blank" rel="noopener"><img src="7.png" alt="Cardápio original de bebidas sem álcool, refrigerantes, sucos e vinhos" loading="lazy" width="1447" height="2048"></a></details></section>
+</main><footer class="foot">TEX PUB · JUNDIAÍ · <a href="https://www.instagram.com/texpub.jundiai/" target="_blank" rel="noopener">@texpub.jundiai</a></footer><script src="menu.js"></script></body></html>
